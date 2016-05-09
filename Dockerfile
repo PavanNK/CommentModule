@@ -1,2 +1,2 @@
-FROM rails:onbuild
+FROM ruby:2.2.2
 MAINTAINER Pavan
