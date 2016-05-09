@@ -1,0 +1,26 @@
+
+  <p id="notice"><%= notice %></p>
+
+  <div class="wrapper-manage-comment">
+    <h4>Comments Section</h4>
+    <div class="table-manage-comment">
+      <div class="row-manage-comment header-manage-comment blue">
+        <div class="cell-manage-comment">
+          Comments
+        </div>
+        <div class="cell-manage-comment">
+          Action
+        </div>
+      </div>
+      <% @comments.each do |comment| %>
+        <div class="row-manage-comment">
+          <div class="cell-manage-comment">
+            <%= comment.text %>
+          </div>
+          <div class="cell-manage-comment">
+            <%= link_to 'Remove', comment, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>

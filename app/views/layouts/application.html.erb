@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-Ideas</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <div class="logo">
+        </div>
+        <div class="eleven columns">
+          <ul class="mainMenu">
+            <li><a href="/">Home</a></li>
+            <li><%= link_to "Manage Comments", comments_path %></li>
+            <li><a href="/">Feedback</a></li>
+            <li><a href="/">FAQ</a></li>
+            <li><a href="/">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <img style="height: 240px;margin-left: 180px;" src="images/idea_challenge2.png"/>
+      <div class="slogan">
+        <div class="ten columns">
+          <h2>Contribute your ideas!</h2>
+        </div>
+
+        <div class="six columns">
+          <h4>Make Singapore a better place</h4>
+          <a href="#" class="button medium green">Find out how</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<div class="container">
+  <%= yield %>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="four columns social">
+      <h5>Follow Us:</h5>
+      <a href="#"><img src="images/dribbble.png"></a>
+      <a href="#"><img src="images/facebook.png"></a>
+      <a href="#"><img src="images/twitter.png"></a>
+      <a href="#"><img src="images/forrst.png"></a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
