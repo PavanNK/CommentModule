@@ -1,2 +1,2 @@
-FROM ruby:2.2.2
+FROM ruby:2.2
 MAINTAINER Pavan
